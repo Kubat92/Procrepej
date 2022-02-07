@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="header__top">
+        <div class="top__text">
+            <span class="top__text__day">Пн-Вс</span>
+            <span class="top__text__date">9-18</span>
+        </div>
+        <div class="top__nav">
+            <ul class="top__nav__list">
+                <li class="nav__list__item"><a href="#" class="nav__list__link">Адреса магазинов</a></li>
+                <li class="nav__list__item"><a href="#" class="nav__list__link">Получение</a></li>
+                <li class="nav__list__item"><a href="#" class="nav__list__link">Оплата</a></li>
+                <li class="nav__list__item"><a href="#" class="nav__list__link">Возврат и обмен</a></li>
+                <li class="nav__list__item"><a href="#" class="nav__list__link">Поставщикам</a></li>
+                <li class="nav__list__item"><a href="#" class="nav__list__link">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header__main">
+        <a  href="#" class="header__logo"><img src="img/logo.png" alt="#"></a>
+        <div class="header__catalog">
+            <button class="catalog__btn">
+                <!-- <div class="btn__line"></div>
+                <div class="btn__line2"></div> -->
+                Каталог
+            </button>
+              <div class="catalog__content">
+                <a href="#" class="catalog__link">Link 1</a>
+                <a href="#" class="catalog__link">Link 2</a>
+                <a href="#" class="catalog__link">Link 3</a>
+                <a href="#" class="catalog__link">Link 4</a>
+                <a href="#" class="catalog__link">Link 5</a>
+                <a href="#" class="catalog__link">Link 6</a>
+              </div>
+        </div>
+        <form action="#" class="header__form">
+            <input type="text" class="header__search" placeholder="Ищите среди 10 000 товаров">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__form__icon">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21.8118C17.5228 21.8118 22 17.3729 22 11.8973C22 6.42174 17.5228 1.98289 12 1.98289C6.47715 1.98289 2 6.42174 2 11.8973C2 17.3729 6.47715 21.8118 12 21.8118ZM12 23.7947C18.6274 23.7947 24 18.468 24 11.8973C24 5.32662 18.6274 0 12 0C5.37258 0 0 5.32662 0 11.8973C0 18.468 5.37258 23.7947 12 23.7947Z" fill="#E30613"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292908 22.5979L3.79291 19.1278L5.20712 20.5299L1.70712 24L0.292908 22.5979Z" fill="#E30613"/>
+            </svg>     
+        </form>
+        <ul class="header__icons">
+            <li class="header__icon__item">
+                <a href="#" class="header__icon__link">
+                    <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__icon">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 2C8.25915 2 6.4 3.86998 6.4 6.23103C6.4 8.59208 8.25915 10.4621 10.5 10.4621C12.7409 10.4621 14.6 8.59208 14.6 6.23103C14.6 3.86998 12.7409 2 10.5 2ZM4.4 6.23103C4.4 2.81354 7.10705 0 10.5 0C13.8929 0 16.6 2.81354 16.6 6.23103C16.6 9.64852 13.8929 12.4621 10.5 12.4621C7.10705 12.4621 4.4 9.64852 4.4 6.23103ZM6.1 17.2816C3.85978 17.2816 2 19.1521 2 21.5152V24H19V21.5152C19 19.1521 17.1402 17.2816 14.9 17.2816H6.1ZM0 21.5152C0 18.0964 2.70691 15.2816 6.1 15.2816H14.9C18.2931 15.2816 21 18.0964 21 21.5152V26H0V21.5152Z"/>
+                    </svg>
+                    <span class="icon__text text1">Профиль</span>
+                </a>
+            </li>
+            <li class="header__icon__item">
+                <a href="#" class="header__icon__link">
+                    <svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__icon">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292894 0.292893C0.48043 0.105356 0.734784 -3.57627e-07 1 0L15 1.58548e-05C15.5523 1.65105e-05 16 0.447732 16 1.00002V22C16 22.3905 15.7727 22.7453 15.4179 22.9085C15.0631 23.0717 14.6457 23.0134 14.3492 22.7593L8 17.3171L1.65079 22.7593C1.35428 23.0134 0.936944 23.0717 0.582143 22.9085C0.227342 22.7453 0 22.3905 0 22V1C0 0.734783 0.105357 0.480429 0.292894 0.292893ZM2 2V19.8258L7.34921 15.2407C7.7237 14.9198 8.2763 14.9198 8.65079 15.2407L14 19.8258V2.00001L2 2Z"/>
+                    </svg>                        
+                    <span class="icon__text text2">Избранное</span>
+                </a>
+            </li>
+            <li class="header__icon__item">
+                <a href="#" class="header__icon__link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__icon">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H3.6233L4.4858 2.93333H20.125C22.2839 2.93333 24 4.71338 24 6.86667V16.6667H6.4392L2.1267 2H0V0ZM5.07387 4.93333L7.9358 14.6667H22V6.86667C22 5.77988 21.1417 4.93333 20.125 4.93333H5.07387ZM10.0625 21.0667C9.83972 21.0667 9.625 21.2566 9.625 21.5333C9.625 21.8101 9.83972 22 10.0625 22C10.2853 22 10.5 21.8101 10.5 21.5333C10.5 21.2566 10.2853 21.0667 10.0625 21.0667ZM7.625 21.5333C7.625 20.1901 8.69746 19.0667 10.0625 19.0667C11.4275 19.0667 12.5 20.1901 12.5 21.5333C12.5 22.8766 11.4275 24 10.0625 24C8.69746 24 7.625 22.8766 7.625 21.5333ZM17.6875 21.5333C17.6875 20.1901 18.76 19.0667 20.125 19.0667C21.49 19.0667 22.5625 20.1901 22.5625 21.5333C22.5625 22.8766 21.49 24 20.125 24C18.76 24 17.6875 22.8766 17.6875 21.5333ZM20.125 21.0667C19.9022 21.0667 19.6875 21.2566 19.6875 21.5333C19.6875 21.8101 19.9022 22 20.125 22C20.3478 22 20.5625 21.8101 20.5625 21.5333C20.5625 21.2566 20.3478 21.0667 20.125 21.0667Z"/>
+                    </svg>                        
+                    <span class="icon__text text3">Корзина</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <header class="header">  
+        <div class="header__info">
+            <span class="header__info__text">Оптовый интернет-магазин. Минимальная сумма заказа 5 000р.</span>
+            <div class="header__info__cont">
+                <span>+7 831 413 55 11</span>
+                <span class="header__info__number">+7 831 283 77 77</span>
+            </div>
+        </div>
+        <div class="header__banner">
+        </div>
+    </header>
+
+
+    <section  class="bestsell">
+
+        <div class="bestsell__top">
+            <h1 class="bestsell__title">Хиты продаж</h1>
+            <a href="#" class="bestsell__link">Смотреть все</a>
+        </div>
+        <ul class="bestsell__card__wrapper">
+            <li class="bestsell__card">
+                <img src="img/new.png" alt="" class="card__new">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <a href="#" class="card__link"></a>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="popular">
+        <div class="popular__top">
+            <h1 class="popular__title">Популярные категории</h1>
+            <a href="#" class="popular__link">Смотреть все</a>
+        </div>
+        <ul class="bestsell__card__wrapper">
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <p class="card__paraph">Пена монтажная, клея и герметики </p>
+                <a href="#" class="popular__card__link"></a>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <p class="card__paraph">Защита и обработка древесины</p>
+                <a href="#" class="popular__card__link"></a>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <p class="card__paraph">Составы для бань и саун</p>
+                <a href="#" class="popular__card__link"></a>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <p class="card__paraph">Ножи, диски для бензо (электро) кос</p>
+                <a href="#" class="popular__card__link"></a>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <p class="card__paraph">Щетки проволочные ручные</p>
+                <a href="#" class="popular__card__link"></a>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <p class="card__paraph">Ударный и рычажный инструмент</p>
+                <a href="#" class="popular__card__link"></a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="watchd">
+        <div class="popular__top">
+            <h1 class="popular__title">Вы недавно смотрели</h1>
+            <a href="#" class="popular__link">Смотреть все</a>
+        </div>
+        <ul class="bestsell__card__wrapper">
+            <li class="bestsell__card">
+                <img src="img/new.png" alt="" class="card__new">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <a href="#" class="card__link"></a>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+            <li class="bestsell__card">
+                <img src="img/bolt.png" alt="" class="card__img">
+                <div class="card__quant__wrap">
+                    <span class="card__quant">10 000</span>
+                    <span class="card__line">/</span>
+                    <span class="card__quant">шт</span>
+                    <span class="card__opt">опт</span>
+                </div>
+                <p class="card__paraph">Пакет с замком zip lock, 10*10 35мкм (с красной полоской) китай</p>
+                <div class="card__under">
+                    <span class="card__under__text">Доступно в розницу</span>
+                    <a href="" class="card__under__link">в 1 магазине</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="article">
+        <div class="popular__top">
+            <h1 class="popular__title">Статьи</h1>
+            <a href="#" class="popular__link">Смотреть все</a>
+        </div>
+        <ul class="article__wrap">
+            <li class="article__item">
+                <img src="img/picture.png" alt="" class="article__img">
+                <span class="article__title">В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же огывававаа..</span>
+                <p class="article__paraph">
+                    В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же материал, а нет, что-то не то.
+                    С крепежом все тоже самое - дешефыфыыффыыво, но недолгв..
+                </p>
+                <a href="#" class="article__link"></a>
+            </li>
+            <li class="article__item">
+                <img src="img/picture.png" alt="" class="article__img">
+                <span class="article__title">В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же огывававаа..</span>
+                <p class="article__paraph">
+                    В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же материал, а нет, что-то не то.
+                    С крепежом все тоже самое - дешефыфыыффыыво, но недолгв..
+                </p>
+                <a href="#" class="article__link"></a>
+            </li>
+            <li class="article__item">
+                <img src="img/picture.png" alt="" class="article__img">
+                <span class="article__title">В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же огывававаа..</span>
+                <p class="article__paraph">
+                    В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же материал, а нет, что-то не то.
+                    С крепежом все тоже самое - дешефыфыыффыыво, но недолгв..
+                </p>
+                <a href="#" class="article__link"></a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="video">
+        <div class="popular__top">
+            <h1 class="popular__title">Видео</h1>
+            <a href="#" class="popular__link">Смотреть все</a>
+        </div>
+        <ul class="article__wrap">
+            <li class="article__item">
+                <img src="img/picture.png" alt="" class="article__img">
+                <span class="article__title">В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же огывававаа..</span>
+                <p class="article__paraph">
+                    В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же материал, а нет, что-то не то.
+                    С крепежом все тоже самое - дешефыфыыффыыво, но недолгв..
+                </p>
+                <a href="#" class="article__link"></a>
+            </li>
+            <li class="article__item">
+                <img src="img/picture.png" alt="" class="article__img">
+                <span class="article__title">В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же огывававаа..</span>
+                <p class="article__paraph">
+                    В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же материал, а нет, что-то не то.
+                    С крепежом все тоже самое - дешефыфыыффыыво, но недолгв..
+                </p>
+                <a href="#" class="article__link"></a>
+            </li>
+            <li class="article__item">
+                <img src="img/picture.png" alt="" class="article__img">
+                <span class="article__title">В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же огывававаа..</span>
+                <p class="article__paraph">
+                    В погоне за дешевизной мы забываем про качество товара и на первый взгляд тот же материал, а нет, что-то не то.
+                    С крепежом все тоже самое - дешефыфыыффыыво, но недолгв..
+                </p>
+                <a href="#" class="article__link"></a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="brand">
+
+    </section>
+    <section class="footer">
+        <div class="footer__wrap">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link"></a></li>
+                <li class="footer__item"><a href="#" class="footer__link"></a></li>
+                <li class="footer__item"><a href="#" class="footer__link"></a></li>
+                <li class="footer__item"><a href="#" class="footer__link"></a></li>
+                <li class="footer__item"><a href="#" class="footer__link"></a></li>
+                <li class="footer__item"><a href="#" class="footer__link"></a></li>
+                <li class="footer__item"><a href="#" class="footer__link"></a></li>
+                <li class="footer__item"><a href="#" class="footer__link"></a></li>
+                <li class="footer__item"><a href="#" class="footer__link"></a></li>
+                <li class="footer__item"><a href="#" class="footer__link"></a></li>
+            </ul>
+            <div>
+                <img src="img/logo.png" alt="">
+                <span>является товарным знаком и объектом интеллектуальной собственности правообладателя.</span>
+            </div>
+            <p>Свидетельство Роспатента №. Вся информация на сайте Prokrep.ru – собственность интернет-магазина.
+                Публикация информации с сайта Prokrep.ru без разрешения запрещена. Информация на сайте Prokrep.ru не является публичной офертой. Указанные цены действуют только при оформлении заказа через интернет-магазин Prokrep.ru. Изображения товара в интернет-магазине Prokrep.ru может отличаться от реального. Цены в пункте выдачи заказов и розничных магазинах компании могут отличаться от указанных на сайте Prokrep.ru.
+                Вы принимаете условия политики конфиденциальности и пользовательского соглашения каждый раз, когда оставляете свои данные в любой форме обратной связи на сайте Prokrep.ru.
+            </p>
+        </div>
+    </section>
+</body>
+</html>

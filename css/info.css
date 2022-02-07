@@ -1,0 +1,39 @@
+@import url(../fonts/Roboto-Regular.ttf);
+
+*{
+    font-family: Roboto, sans-serif;
+}
+
+section{
+    max-width: 1200px;
+    margin-top: 30px;
+    margin-left: 53px;
+    margin-bottom: 116px;
+}
+h1{
+    font-size: 50px;
+    margin: 0 0 30px 0;
+}
+p{
+    margin: 15px 0 55px 0;
+}
+h2{
+    margin: 0;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 1600px) {
+    section{
+        width: 80%;
+        margin: 30px auto 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
